@@ -532,14 +532,14 @@ segments(read_start, y, read_end, y, lwd=2, col="slateblue")
 
 ---
 
-# Microbiome DO361 vs DNA DO361
+# Genomic DO361 vs Microbiome DO361
 
 ```{r do361_do361, results="asis"}
 microbiome <- readRDS("Data/microbiome_mixups_dist.rds")
-tab <- table("Microbiome DO361"=c("A", "B"), "DNA DO361"=c("AA", "BB"))
+tab <- table("DNA DO361"=c("AA", "BB"), "Microbiome DO361"=c("A", "B"))
 tab[1,1] <- microbiome$k1["DO361", "DO361"]
-tab[2,1] <- (microbiome$n1 - microbiome$k1)["DO361", "DO361"]
-tab[1,2] <- (microbiome$n3 - microbiome$k3)["DO361", "DO361"]
+tab[1,2] <- (microbiome$n1 - microbiome$k1)["DO361", "DO361"]
+tab[2,1] <- (microbiome$n3 - microbiome$k3)["DO361", "DO361"]
 tab[2,2] <- microbiome$k3["DO361", "DO361"]
 kable_styling(kable(add_commas(tab), align="rrr"),
               font_size=48, bootstrap_options="striped")
@@ -550,13 +550,13 @@ kable_styling(kable(add_commas(tab), align="rrr"),
 
 ---
 
-# Microbiome DO360 vs DNA DO360
+# Genomic DO360 vs Microbiome DO360
 
 ```{r do360_do360, results="asis"}
-tab <- table("Microbiome DO360"=c("A", "B"), "DNA DO360"=c("AA", "BB"))
+tab <- table("DNA DO360"=c("AA", "BB"), "Microbiome DO360"=c("A", "B"))
 tab[1,1] <- microbiome$k1["DO360", "DO360"]
-tab[2,1] <- (microbiome$n1 - microbiome$k1)["DO360", "DO360"]
-tab[1,2] <- (microbiome$n3 - microbiome$k3)["DO360", "DO360"]
+tab[1,2] <- (microbiome$n1 - microbiome$k1)["DO360", "DO360"]
+tab[2,1] <- (microbiome$n3 - microbiome$k3)["DO360", "DO360"]
 tab[2,2] <- microbiome$k3["DO360", "DO360"]
 kable_styling(kable(add_commas(tab), align="rrr"),
               font_size=48, bootstrap_options="striped")
@@ -564,13 +564,13 @@ kable_styling(kable(add_commas(tab), align="rrr"),
 
 ---
 
-# Microbiome DO360 vs DNA DO370
+# Genomic DO370 vs Microbiome DO360
 
 ```{r do370_do360, results="asis"}
-tab <- table("Microbiome DO360"=c("A", "B"), "DNA DO370"=c("AA", "BB"))
+tab <- table("DNA DO370"=c("AA", "BB"), "Microbiome DO360"=c("A", "B"))
 tab[1,1] <- microbiome$k1["DO370", "DO360"]
-tab[2,1] <- (microbiome$n1 - microbiome$k1)["DO370", "DO360"]
-tab[1,2] <- (microbiome$n3 - microbiome$k3)["DO370", "DO360"]
+tab[1,2] <- (microbiome$n1 - microbiome$k1)["DO370", "DO360"]
+tab[2,1] <- (microbiome$n3 - microbiome$k3)["DO370", "DO360"]
 tab[2,2] <- microbiome$k3["DO370", "DO360"]
 kable_styling(kable(add_commas(tab), align="rrr"),
               font_size=48, bootstrap_options="striped")
