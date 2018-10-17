@@ -8,17 +8,17 @@ docs/index.html: slides.Rmd docs/kbroman.css R/hs_fig.R R/gve_mixup_scheme.R
 docs/kbroman.css: kbroman.css
 	cp kbroman.css docs/
 
-ctc2018.zip: docs/index.html docs/broman_ctc2018.pdf
-	mkdir docs/ctc2018
-	cd docs;cp -r *.html *.svg *.css index_files/ libs/ ctc2018/
-	cp docs/broman_ctc2018.pdf docs/ctc2018/
-	cd docs;zip -r ctc2018.zip ctc2018/
-	rm -r docs/ctc2018/
-	mv docs/ctc2018.zip .
+jax2018.zip: docs/index.html docs/jax2018.pdf
+	mkdir docs/jax2018
+	cd docs;cp -r *.html *.svg *.css index_files/ libs/ jax2018/
+	cp docs/jax2018.pdf docs/jax2018/
+	cd docs;zip -r jax2018.zip jax2018/
+	rm -r docs/jax2018/
+	mv docs/jax2018.zip .
 
-docs/broman_ctc2018.pdf: docs/index.html
+docs/jax2018.pdf: docs/index.html
 	R -e "file <- paste0('file://', normalizePath('docs/index.html'));webshot::webshot(file, '$@')"
 
-all: ctc2018.zip
-zip: ctc2018.zip
-pdf: docs/broman_ctc2018.pdf
+all: jax2018.zip
+zip: jax2018.zip
+pdf: docs/jax2018.pdf

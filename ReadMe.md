@@ -1,11 +1,12 @@
 ## Cleaning genotype data for diversity outbred mice
 
-Slides for a talk at the [Complex Trait Community
+Slides for a talk at the Jackson Laboratory in Bar Harbor, Maine, on
+17 Oct 2018. I gave an earlier version of this at the [Complex Trait Community
 meeting](http://www.complextrait.org/ctc2018/) in Glasgow in
 June, 2018.
 
-Rendered slides: <https://kbroman.org/Talk_CTC2018>
-([or as pdf](https://kbroman.org/Talk_CTC2018/broman_ctc2018.pdf))
+Rendered slides: <https://kbroman.org/Talk_JAX2018>
+([or as pdf](https://kbroman.org/Talk_JAX2018/jax2018.pdf))
 
 Note that the primary data files are not provided, and you won't be able to
 build the slides without them.
