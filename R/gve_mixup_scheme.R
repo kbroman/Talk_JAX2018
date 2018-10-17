@@ -114,7 +114,7 @@ y5 <- c(y3[1], y3[1]+diff(y3)*1.2)
 rect(x3[1], y5[1], x3[2], y5[2])
 text(x3[1]-xtgap, mean(y5), "DNA samples", srt=90)
 text(mean(x3), y5[2]+ytgap, "mRNA samples")
-text(mean(x3), y5[1]-ytgap, "similarity matrix", cex=1.2, col=maincolor, font=2)
+text(mean(x3), y5[1]-ytgap, "distance matrix", cex=1.2, col=maincolor, font=2)
 
 
 
