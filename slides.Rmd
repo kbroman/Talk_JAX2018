@@ -41,7 +41,7 @@ library(parallel)
 set.seed(63790040)
 ```
 
-# Heterogeneous stock
+# Multi-parent advanced intercross
 
 ```{r dofig}
 source("R/hs_fig.R")
